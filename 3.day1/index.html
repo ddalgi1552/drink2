@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body id="realback" onkeyup="enterkey()" >
+    <div class="nav">
+      <button 
+      type="button" 
+      id="backbtn" 
+      class="navbtn" 
+      onclick=back()>
+        <
+      </button>
+      <button 
+      type="button"
+      id="homebtn"
+      class="navbtn"
+      onclick=home()>
+      금주선언 프로젝트
+      </button>
+      <button 
+      type="button" 
+      id="nextbtn" 
+      class="navbtn" 
+      onclick=next()>
+        >
+
+      </button>
+    </div>
+    <div class="underbar"></div>
+
+
+    <div class="daybox">
+      <div>
+        <h1>D+1</h1>
+      </div>
+      <div id="score">
+        <h2>0</h2>
+      </div>
+    </div>
+
+
+    <div class="container" id="day1img">
+          <div class="key" id="ArrowLeft"></div>
+          <img src="./막걸리흔들기1.png" id="img">
+          <div class="key" id="ArrowRight"></div>
+    </div>
+
+  
+          <!-- //공통적으로 들어가는 게임 설명창 -->
+          <div class="gamediscribe">
+            <div class="gamediscribe_text">
+              <p id="g_text" >비가 오고있습니다<br>
+                그리고 눈 앞에 파전이 보이네요?<br>
+                그리고 막걸리도 있네요?<br>
+                막걸리를 흔들어서 금주 선언을 지키세요!</p>
+            </div>
+            <div class="gamediscribe_background">
+              <img id="g_backimg" src="../말풍선2.svg">
+            </div>
+          </div>
+          
+  <script src="main.js"></script>
+</body>
+</html>

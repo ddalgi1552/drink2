@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="nav">
+    <button 
+    type="button" 
+    id="backbtn" 
+    class="navbtn" 
+    onclick=back()>
+      <
+    </button>
+    <button 
+    type="button"
+    id="homebtn"
+    class="navbtn"
+    onclick=home()>
+    금주선언 프로젝트
+    </button>
+    <button 
+    type="button" 
+    id="nextbtn" 
+    class="navbtn" 
+    onclick=next()>
+      >
+
+    </button>
+  </div>
+  <div class="underbar"></div>
+
+
+  <div class="daybox">
+    <div>
+      <h1>D+3</h1>
+    </div>
+    <div id="score">
+      <h2>0</h2>
+    </div>
+  </div>
+    <div class="container">
+          <div class="container_image">
+              <div class="sojubox">
+                  <div class="container2">
+                    <div id="draggable0"><img id="soju0" src="soju1.png" width="30px"></div>
+                    <div id="draggable1"><img id="soju1"src="soju1.png" width="30px"></div>
+                    <div id="draggable2"><img id="soju2"src="soju1.png" width="30px"></div>
+                    <div id="draggable3"><img id="soju3"src="soju1.png" width="30px"></div>
+                    <div id="draggable4"><img id="soju4"src="soju1.png" width="30px"></div>
+                  </div>
+                
+                  <div class="container3">
+                    <div id="draggable5" style="position:relative;"><img id="soju5"src="soju1.png" width="30px"></div>
+                    <div id="draggable6" style="position:relative;"><img id="soju6"src="soju1.png" width="30px"></div>
+                    <div id="draggable7" style="position:relative;"><img id="soju7"src="soju1.png" width="30px"></div>
+                    <div id="draggable8" style="position:relative;"><img id="soju8"src="soju1.png" width="30px"></div>
+                    <div id="draggable9" style="position:relative;"><img id="soju9"src="soju1.png" width="30px"></div>
+                  </div>
+              </div>
+              <div class="friendbox">
+                  <div class="container4">
+                    <div id="droppable0"><img id="roo0" src="홍학1.png" width="50px"></div>
+                    <div id="droppable1"><img id="roo1" src="홍학1.png" width="50px"></div>
+                    <div id="droppable2"><img id="roo2" src="홍학1.png" width="50px"></div>
+                    <div id="droppable3"><img id="roo3" src="홍학1.png" width="50px"></div>
+                    <div id="droppable4"><img id="roo4" src="홍학1.png" width="50px"></div>
+                  </div>
+                
+                  <div class="container5">
+                    <div id="droppable5"><img id="roo5" src="홍학2.png" width="50px"></div>
+                    <div id="droppable6"><img id="roo6" src="홍학2.png" width="50px"></div>
+                    <div id="droppable7"><img id="roo7" src="홍학2.png" width="50px"></div>
+                    <div id="droppable8"><img id="roo8" src="홍학2.png" width="50px"></div>
+                    <div id="droppable9"><img id="roo9" src="홍학2.png" width="50px"></div>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+            <!-- //공통적으로 들어가는 게임 설명창 -->
+            <div class="gamediscribe">
+              <div class="gamediscribe_text">
+                <p id="g_text" >MT 첫날!<br>
+                  동기들이 술을 마시자고 꼬셔요ㅠ 안돼~<br>
+                  술을 먹여서 모두 쓰러뜨리세요!
+                  </p>
+              </div>
+              <div class="gamediscribe_background">
+                <img id="g_backimg" src="../말풍선1.svg">
+              </div>
+            </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <!-- <p>Drag the SOJU.</p> -->
+<script src="main.js"></script>
+</body>
+</html>

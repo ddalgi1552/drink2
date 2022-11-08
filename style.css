@@ -1,0 +1,118 @@
+/*공통적으로 쓰이게 될 속성들입니다 */
+
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #FFE269;
+  margin:0;
+}
+
+/* D+N과 SCORE에 적용되어있습니다 */
+
+h1{
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin: 0%;
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}
+
+h2{
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin: 0%;
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.daybox{
+  display: flex;
+  flex direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:500px;
+}
+
+
+
+/* navbar */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+button.navbtn{
+  margin-top: 10px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 20px;
+
+}
+
+.underbar{
+  border-bottom: 1px solid white;
+  width: 100vw;
+}
+
+
+/* 
+게임설명창 디자인입니다 */
+.gamediscribe{
+  position: relative;
+  padding-left: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#g_text{
+  width: 500px;
+  height: auto;
+  text-align: left;
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: black;
+  position: relative;
+  left: 270px;
+  
+}
+
+#g_backimg{
+  position: relative;
+  left: -260px;
+  width: 1000px;
+  z-index: -10;
+}

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{  overflow-x:hidden;
+  overflow-y:hidden;}
+
+body{
+  margin:0;
+  background-color: #FFE269;
+  cursor: url('./마우스.png'), auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+header{
+  background-image: url("./표지.png");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mazemaster{
+  position: relative;
+  left:400px;
+  padding-left: 100px;
+  top: 30px;
+}
+.startbox{
+  position: relative;
+  top: 300px;
+}
+
+.txt-title{
+  font-size: 6rem;
+  font-family:'GangwonEduPowerExtraBoldA';
+  position: relative;
+  top: 40px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.no-drink-poster{
+  perspective: 3000px;
+  transform: translate(50%, 50%);
+  position: relative;
+  left: 60px;
+  bottom: -167px;
+  transform: scale(0.8);
+}
+
+.text{margin-left: 70px;
+}
+
+.poster {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  animation: poster-ani 1.6s infinite linear alternate;
+  transform-style: preserve-3d;
+}
+@keyframes poster-ani{
+  0%{
+    transform: rotateY(-20deg);
+  }
+  100%{
+    transform: rotateY(20deg);
+  }
+  
+}
+
+.poster-title {
+  padding: 0.5em 0;
+  font-size: 3rem;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  text-align: center;
+  transform: translateZ(30px);
+}
+
+.bottle{
+  position:absolute;
+  width: 100%;
+}
+
+.bottle:nth-of-type(1) {
+  width: 80%;
+  left:-32%;
+  bottom:30%;
+  transform: translateZ(20px) rotateZ(-70deg);
+}
+
+.bottle:nth-of-type(2) {
+  width: 80%;
+  left: 20%;
+  bottom: 30%;
+  transform: translateZ(50px);
+}
+
+.bottle:nth-of-type(3) {
+  width: 120%;
+  left: -15%;
+  bottom: 20%;
+  transform: translateZ(70px);
+}
+
+
+@keyframes daybut-ani{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+  
+}
+
+#sizeInput{
+  visibility: hidden;
+}
