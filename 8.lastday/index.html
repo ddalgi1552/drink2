@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body{
+      perspective: 200px;
+    }
+    #container{
+      position: absolute;
+      width: 400px;
+      height: 6rem;
+      font-size: 2rem;
+      background-color:pink;
+      color: white;
+      left: 0px;
+      top: 0px;
+      transform: translate(-50%,-50%);
+      overflow: hidden;
+      transform: rotateX(90deg) translateX(200px);
+      z-index: 3;
+    
+    }
+    #container2{
+      position: absolute;
+      width: 400px;
+      height: 6rem;
+      font-size: 2rem;
+      background-color:black;
+      color: white;
+      left: 0px;
+      top: 0px;
+      transform: translate(-50%,-50%);
+      overflow: hidden;
+      transform: translateY(200px) rotateY(90deg) rotateZ(90deg);
+    
+    }
+
+  </style>
+</head>
+<body>
+<div id="container" class="ticker" data-speed="5" data-gap="0"><p><span>나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지</span></p>
+</div>
+<div id="container2" class="ticker" data-speed="5" data-gap="0"><p><span>나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지나는 시험이 싫다.. 내가 왜 시험을 봐야하는거지</span></p>
+</div>
+
+<script>
+
+//1. div를 만들고 클래스 이름을 지정한다.
+//2. 마스킹되는거랑 같은 원리기때문에, div를 만들고 그 안에 p, span으로 또 한번씩 감싸줘야한다.
+// 3. data-speed, data-gap을 설정한다.
+// speed=초당 흘러가는 픽셀 수
+// gap=흘러가려면 여러 요소가 이어져서 나오는건데 그 시간차를 설정하는 것
+
+
+
+bhTicker("ticker", 4);
+
+function bhTicker(cl,speed) {
+	let t = document.getElementsByClassName(cl);
+	let ta = []; let ts=[]; let tg=[]; let tw=[];
+	let container,mover,text,textWidth;
+
+	for(let i=0; i<t.length; i++){
+		container = t[i];
+		mover = container.getElementsByTagName("p").item(0);
+		text = mover.getElementsByTagName("span").item(0);
+
+		// set
+		mover.style.position = "absolute";
+		mover.style.margin = "0 0 0 0";
+		mover.style.left = "0px";
+		mover.leftPosition = 0;
+		mover.style.width = text.childNodes.item(0).length + "em";	// stretch width
+		textWidth = text.offsetWidth;
+
+		let speed2 = t[i].dataset.speed;
+		if (textWidth > container.offsetWidth) {
+			if(speed2 == 1){speed2 = 2};
+			mover.style.width = textWidth * speed2 + "px";
+			
+			for(let k=0;k<speed2;k++){
+				mover.innerHTML += mover.innerHTML;	
+			}
+		}
+
+		tw.push(textWidth);
+		tg.push(t[i].dataset.gap);
+		ts.push(t[i].dataset.speed);
+		ta.push(mover);
+	}
+
+	let tickerAction = function() {
+		for(let j=0;j<ta.length;j++){
+			let speed = parseInt(ts[j]);
+			let gap = parseInt(tg[j]);
+			let tw2 = tw[j];
+
+			if (ta[j].leftPosition * -speed > tw2*speed) {
+				ta[j].leftPosition = -speed;
+			} else {
+				ta[j].leftPosition -= speed;
+			}
+
+			ta[j].style.left = (-gap + ta[j].leftPosition) + "px";
+		}
+		window.requestAnimationFrame(tickerAction);
+	};
+	tickerAction();
+}
+  </script>
+</body>
+</html>

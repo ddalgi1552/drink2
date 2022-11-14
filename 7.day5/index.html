@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="realbody">
+  <section id="rain">
+    <div class="nav">
+      <button 
+      type="button" 
+      id="backbtn" 
+      class="navbtn" 
+      onclick=back()>
+        <
+      </button>
+      <button 
+      type="button"
+      id="homebtn"
+      class="navbtn"
+      onclick=home()>
+      금주선언 프로젝트
+      </button>
+      <button 
+      type="button" 
+      id="nextbtn" 
+      class="navbtn" 
+      onclick=next()>
+        >
+
+      </button>
+    </div>
+    <div class="underbar"></div>
+
+    <div class="daybox">
+      <div>
+        <h1>D+5</h1>
+      </div>
+      <div id="score">
+        <h2>0</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div id="box">
+        <div id="outsidebd">
+          <div id="insidebd">
+            <div id="playground">
+            </div>
+          </div>
+        </div>
+
+        <div id="controlbar">
+          <ul class="options">
+            <li><input type="checkbox" id="resizecheck"><label for="resizecheck">Original Size</label></li>
+            <li><input type="checkbox" id="guidecheck" checked="checked"><label for="guidecheck">Number Guide</label></li>
+            <li>
+              <label for="itemsx">Blocks</label>
+              <input type="text" id="itemsx" value="4" onkeyup="ckminblocks(this)" maxlength="1">
+              *
+              <input type="text" id="itemsy" value="4" onkeyup="ckminblocks(this)" maxlength="1">
+            </li>
+            <li>
+              <label for="itemsx">Level</label>
+              <select id="levelselect">
+                <option value="2">Easy</option>
+                <option value="4">Normal</option>
+                <option value="6">Hard</option>
+              </select>
+            </li>
+          </ul>
+          <dl class="timer">
+            <dt>Time : </dt>
+            <dd id="times"><span>00</span>:<span>00</span>:<span>00</span></dd>
+            <dt class="clicks">Click : </dt>
+            <dd id="clicks">0</dd>
+          </dl>
+          <div class="btns">
+            <input type="button" id="showimage" value="Show Image" onclick="showimage()">
+            <input type="button" id="mainbutton" value="Make Game" onclick="makegame()">
+          </div>
+        </div>
+
+
+        <div id="message">
+          <p>&nbsp;</p>
+        </div>
+        <div id="guideimage"></div>
+      </div>
+
+          
+        </div>
+      <!-- //공통적으로 들어가는 게임 설명창 -->
+  <div class="gamediscribe">
+    <div class="gamediscribe_text">
+      <p id="g_text" >
+        <br>
+        괜히 날씨가 좋은 날<br>
+        나만 빼고 모두 술을 마시고 있네요<br>
+        부적을 완성하여 날씨를 안좋게 만들어보세요<br>
+    </div>
+    <div class="gamediscribe_background">
+      <img id="g_backimg" src="../말풍선1.svg">
+    </div>
+  </div>  
+  </body>
+
+
+
+
+  </section>
+  <script src="main.js"></script>
+</html>

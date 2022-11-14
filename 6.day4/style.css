@@ -1,0 +1,135 @@
+@import url(../style.css);
+
+canvas {
+  transition: 2s;
+}
+
+#gobtn{
+  margin-top: 40px;
+  position: relative;
+    border: none;
+    display: inline-block;
+    padding: 20px 50px 10px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 20px;
+    background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+    color: white;
+}
+
+#gobtn:hover {
+  letter-spacing: 2px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+ 
+.rotate {
+  width: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.pin{ 
+  width: 30px;
+  z-index: 22;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+}
+
+
+
+
+/* 모달창 */
+
+#modal.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 30;
+  display: none;
+}
+#modal .modal-window {
+  background: rgba( 69, 139, 197, 0.70 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 400px;
+  height: 350px;
+  position: relative;
+  top: -100px;
+  padding: 10px;
+  z-index: 30;
+}
+#modal .title {
+  padding-left: 10px;
+  padding-top: 10px;
+  display: inline;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+  
+}
+#modal .title h2 {
+  display: inline;
+}
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#modal #content {
+  margin-top: 20px;
+  padding: 0px 10px;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#modal-Image{
+  margin-top: 20px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  width: 380px;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#realbody{
+  background-image: url("./핑팬.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

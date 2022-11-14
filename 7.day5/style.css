@@ -1,0 +1,195 @@
+@import url(../style.css);
+@import url(../비내리는효과/style.css);
+*{
+	margin:0;
+	padding:0;
+}
+#realbody{
+  background-image: url("./맑음.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+*:first-child+html body{font-size:12px;}
+body,input,select{
+	font-family:tahoma,arial,sans-serif,verdana;
+}
+ul,ul li{
+	list-style:none;
+}
+
+#box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+	position:relative;
+	top:-50px;
+	text-align:left;
+	width:300px;
+	margin:0;
+}
+#box #controlbar{
+	width:300px;
+	z-index:5;
+}
+#box #controlbar ul.options{
+	font-size:0.9em;
+	padding:2px 0;
+	border:solid #000;
+	border-width:2px 0;
+}
+#box #controlbar ul.options li{
+	padding:2px 5px;
+}
+#box #controlbar ul.options li input{
+	vertical-align:middle;
+}
+#box #controlbar ul.options li label{
+	padding:0 3px 0 1px;
+}
+#box #controlbar ul.options li #resizecheck,
+#box #controlbar ul.options li #guidecheck{
+	width:13px;
+	height:13px;
+	margin-right:4px;
+}
+#box #controlbar ul.options li #itemsx,
+#box #controlbar ul.options li #itemsy{
+	width:17px;
+	height:1.3em;
+	font-size:0.9em;
+	text-align:center;
+	margin:-1px 0 0;
+	border:1px solid #000;
+}
+#box #controlbar ul.options li #levelselect{
+	width:60px;
+	font-size:0.9em;
+	vertical-align:middle;
+	margin-left:-2px;
+}
+#box #controlbar dl.timer{
+	width:90px;
+	padding:1px 5px;
+	border-bottom:2px solid #000;
+	display:table;
+}
+#box #controlbar dl.timer dt,
+#box #controlbar dl.timer dd{
+	font-size:0.9em;
+	line-height:1.35em;
+}
+#box #controlbar dl.timer dt{
+	float:left;
+	margin-right:3px;
+}
+#box #controlbar dl.timer dt.clicks{
+	padding-left:1px;
+}
+#box #controlbar dl.timer dd{
+	float:right;
+}
+#box #controlbar div.btns input{
+	height:1.7em;
+	width:100%;
+	font-size:0.9em;
+	margin-top:3px;
+	border:1px solid #000;
+	background:#F0F0F0;
+  border: none;
+  display: inline-block;
+  padding: 9px 50px 10px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+  ;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 20px;
+  background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+  color: white;
+  
+}
+
+#outsidebd{
+	padding: 5px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+#insidebd{
+	padding:10px;
+}
+
+
+*html #insidebd{height:1px;}
+#playground{
+	position:relative;
+	width:203px;
+	height:203px;
+}
+#playground ul li{
+	position:absolute;
+	background:#000;
+	overflow:hidden;
+}
+#playground ul li#blankblock div{
+	border:2px solid #666;
+}
+#playground ul li img{
+	position:relative;
+	vertical-align:top;
+}
+#playground ul li div.guidebg{
+	background:#FFF;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#playground ul li div.guide{
+	font-size:0.9em;
+	line-height:1.15em;
+	padding:2px 0 0 4px;
+}
+#playground ul li div.guidebg,
+#playground ul li div.guide,
+#message,
+#guideimage{
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+#message{
+	text-align:center;
+	background:#F0F0F0;
+	z-index:4;
+}
+#message strong{
+	font-size:2.3em;
+	font-weight:normal;
+	letter-spacing:-0.05em;
+}
+div.opacity{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#guideimage{
+	overflow:hidden;
+	z-index:4;
+}

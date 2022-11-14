@@ -1,0 +1,61 @@
+@import url(../style.css);
+
+/* 이 파일에서만 쓰이는 속성들입니다. */
+
+/* 화살표 속성이며 js와 연동되어 있습니다 */
+#ArrowLeft {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  background-image:url('./키보드\ 좌.png');
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.1s ease;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size:60%;
+}
+#ArrowLeft.pressed{
+  background-image:url('./키보드\ 좌\ push.png');
+  transform: scale(1.2);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+#ArrowRight {
+  margin-top: 100px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background-image:url('./키보드\ 우.png');
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.1s ease;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size:60%;
+}
+#ArrowRight.pressed{
+  background-image:url('./키보드\ 우\ push.png');
+  transform: scale(1.2);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+
+#realback{
+  background-image: url('./막걸리와파전.jpg') ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#img{
+  width: 300px;
+  margin-top: -30px;
+  z-index: 22;
+
+}
+

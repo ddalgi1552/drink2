@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="realbody">
+  <div class="nav">
+    <button 
+    type="button" 
+    id="backbtn" 
+    class="navbtn" 
+    onclick=back()>
+      <
+    </button>
+    <button 
+    type="button"
+    id="homebtn"
+    class="navbtn"
+    onclick=home()>
+    금주선언 프로젝트
+    </button>
+    <button 
+    type="button" 
+    id="nextbtn" 
+    class="navbtn" 
+    onclick=next()>
+      >
+
+    </button>
+  </div>
+  <div class="underbar"></div>
+
+
+  <div class="daybox">
+    <div>
+      <h1>D+2</h1>
+    </div>
+    <div id="score">
+      <h2>0</h2>
+    </div>
+  </div>
+
+    <div class="container">
+        <div id="idea-box"> 
+          <input placeholder="아이디어를 입력해주세요"
+          id='ideainputbox' onchange='printName()'/>
+          <div id='result'></div>
+        </div>
+        <div class="container_image">
+            <img src="./소주.svg" id="img">
+        </div>
+    </div>
+       <!-- //공통적으로 들어가는 게임 설명창 -->
+       <div class="gamediscribe">
+        <div class="gamediscribe_text">
+          <p id="g_text" >과제 마감 하루 전.....<br>
+            당최 아이디어가 떠오르지 않아요!<br>
+            술마시고 생각하면 없던 창의력이 샘솟던데......</p>
+        </div>
+        <div class="gamediscribe_background">
+          <img id="g_backimg" src="../말풍선2.svg">
+        </div>
+      </div>
+      
+  <script src="main.js"></script>
+</body>
+</html>
