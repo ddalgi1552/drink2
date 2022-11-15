@@ -1,5 +1,5 @@
 let num = 0;
-const SPEED = 0.1
+const SPEED = 0.03
 let data= new Array();
 let state = 1
 let score = document.getElementById("score")
@@ -27,7 +27,7 @@ function enlarge(){
     document.getElementById("img").src="./소주x.png"
     state = 0
     clearInterval(interval)
-    alert("2일차 금주 성공!")
+    alert("2번째 테스트 완료!")
     setTimeout(function() {
      next()
   },1000)

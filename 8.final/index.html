@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="rain">
+    <header>
         <div class="nav">
           <button 
           type="button" 
@@ -33,10 +33,29 @@
           </button>
         </div>
         <div class="underbar"></div>
-    
-    <h1>축하합니다!</h1>
-    <p>이제 진짜 금주를 해볼 시간이에요</p>
-    <button onclick="move()">시작하기</button>
+    </header>
+    <main>
+        <p>축하합니다!<br> 모든 단계를 해내셨어요!</p>
+        <div class="describe">
+            <p>이제 이것만 새기고 가면 돼요. <br>
+                우리는 왜 금주를 해야할까요?</p>
+        </div>
+        <div class="describe">
+            <p>1. 뇌의 노화</p>
+            <p class="bodytext">술을 마시다보면 필름이 끊길 때가 있는데, 이것이 반복되면 알코올성 치매가 올 수 있어요.</p>
+        </div>
+        <div class="describe">
+            <p>2. 간 건강 악화</p>
+            <P class="bodytext">알코올로 인해 가장 영향을 많이 받는 장기는 바로 간이에요. 술을 많이 마실수록 주량이 는다고 하지만, 이는 사실 간이 병들어 통증을 느끼지 못하게 되는 거에요.</P>
+        </div>
+        <div class="describe">
+            <p>3. 잇몸 손상</p>
+            <P class="bodytext">알코올은 치아건강에 좋지 않아요. 특히나 잇몸을 상하게 만들어 치주염을 유발하며, 치주염의 경우 완치가 불가능하기 때문에 평생 관리를 해야하며 심해지면 치아의 상실로 이어질 수 있어요.</P>
+        </div>
+    </main>
+
+    <p>건강을 생각한다면, 이제 진짜 금주를 해볼 시간이에요</ㅠp> <br>
+    <button class="start" onclick="move()">시작하기</button>
 </body>
 
 <script>

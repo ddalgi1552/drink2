@@ -38,7 +38,7 @@ function enterkey() {
             document.getElementById("img").src = "./막걸리터짐.png";
         },600)
         setTimeout(function() {
-            alert("1일차 무사히 성공!")
+            alert("1번째 테스트 완료!")
             next()
           }, 700);
     }

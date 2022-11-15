@@ -12,11 +12,11 @@ $( function() {
       drop: function( event, ui ) {
 
      
-        $(`#roo${i}`).attr("src","홍학4.png");
+        $(`#roo${i}`).attr("src","soju2.png");
         document.getElementById("soju" + tt.slice(4,5)).style.display = "none";
         count++
         if (count==10){
-          alert("3주차 금주 완료!")
+          alert("3번째 테스트 완료!")
           next()
         }
         score.innerHTML= `<h2>${count}</h2>`
