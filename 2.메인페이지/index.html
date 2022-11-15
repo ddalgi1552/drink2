@@ -8,30 +8,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <header>
-    <div class="titlemaster">
-      <h1 class="txt-title">나 진짜<br>
-        오늘부터 <br> 정말 <br>금주한다!</h1>
-      <div class="no-drink-poster">
-        <section class="poster">
-          <figure class="bottle">
-            <img src="./소주.png">
-          </figure>
-          <figure class="bottle">
-            <img src="./맥주.png">
-          </figure>
-          <figure class="bottle">
-            <img src="./금지.png">
-          </figure>
-        </section>
+    <div class="topnavcontainer">
+      <button class="tnav">자가진단</button>
+      <button class="tnav">음주테스트</button>
+      <button class="tnav">day1</button>
+      <button class="tnav">day2</button>
+      <button class="tnav">day3</button>
+      <button class="tnav">day4</button>
+      <button class="tnav">day5</button>
+      <button class="tnav">피날레</button>
+    </div>
+    <main>
+      <div class="titlemaster">
+        <h1 class="txt-title">당신이 과연 금주를 할 수 있을까요? <br>여기서 성공한다면, 당신을 인정해드리죠!</h1>
+        <h2 class="txt-title2">시작에 앞서, 당신이 음주를 했는지 알아보겠습니다! 미로를 탈출해보세요</h2>
+        <div class="no-drink-poster">
+          <section class="poster">
+            <figure class="bottle">
+              <img src="./소주.png">
+            </figure>
+            <figure class="bottle">
+              <img src="./맥주.png">
+            </figure>
+            <figure class="bottle">
+              <img src="./금지.png">
+            </figure>
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="mazemaster">
-      <canvas id="maze"></canvas>
-      <input type="text" id="sizeInput" onkeyup="enterkey();"/>
-      <label id="text"></label>
-    </div>
-  </section>
+      <div class="mazemaster">
+        <canvas id="maze"></canvas>
+        <input type="text" id="sizeInput" onkeyup="enterkey();"/>
+        <label id="text"></label>
+      </div>
+    </main>
     </header>
   <script src="main.js"></script>
 </body>

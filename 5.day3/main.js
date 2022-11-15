@@ -45,7 +45,7 @@ $( function() {
   }
   
   function next(){
-      location.href=('../6.day4/index.html');
+      location.href=('../7.day5/index.html');
   }
   
   

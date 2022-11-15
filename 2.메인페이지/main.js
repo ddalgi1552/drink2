@@ -91,7 +91,7 @@ function keyPush(evt){
 		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy;
 		if(cx==tc-1 && cy==tc-2){
       location.href='../3.day1/index.html';
-			alert("let's start!");
+			alert("그럼 이제, 사이버공간에서 당신이 금주할만한 능력이 있는지 테스트하겠습니다");
 			initialize();
 		}
 	}

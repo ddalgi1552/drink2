@@ -9,8 +9,8 @@
 }
 
 html{
-  overflow-x:hidden;
-  overflow-y:hidden;
+  /* overflow-x:hidden;
+  overflow-y:hidden; */
 }
 body {
   display: flex;
@@ -115,4 +115,24 @@ button.navbtn{
   left: -260px;
   width: 1000px;
   z-index: -10;
+}
+
+.main{
+  display: flex;
+}
+
+.tnav{
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.topnavcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 10%;
 }

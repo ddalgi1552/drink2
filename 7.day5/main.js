@@ -327,7 +327,7 @@ makegame();
   
   
   function back(){
-      location.href=('../6.day4/index.html');
+      location.href=('../5.day3/index.html');
   }
   
   function home(){
@@ -335,7 +335,7 @@ makegame();
   }
   
   function next(){
-      location.href=('../2.메인페이지/index.html');
+      location.href=('../8.final/index.html');
   }
   
   
